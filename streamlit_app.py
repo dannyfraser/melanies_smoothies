@@ -26,7 +26,7 @@ ingredients_list = st.multiselect(
     max_selections=5
 )
 if ingredients_list:
-    ingredients_string = " ".join(ingredients_list)
+    ingredients_string = " ".join(ingredients_list) + " "
     st.write(ingredients_string)
 
     insert_button = st.button("Submit order")
